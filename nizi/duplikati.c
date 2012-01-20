@@ -21,7 +21,7 @@ int main ( int argc, char *argv[] )
             if(a[i] == a[j])
             {
                 int pos;
-                for(pos = j; pos < n - 1 - izbrisani; pos++)
+                for(pos = j; pos < n - 2 - izbrisani; pos++)
                 {
                     a[pos] = a[pos + 1];
                 }
