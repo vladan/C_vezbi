@@ -7,7 +7,7 @@
 int samoglaska(char c);
 
 
-int main ( int argc, char *argv[] )
+int main ( int argc, char* argv[] )
 {
     if(argc != 2)
     {
@@ -29,6 +29,7 @@ int main ( int argc, char *argv[] )
     {
         if(isalpha(c) && samoglaska(c))
         {
+            dolzina = 1;
             while ((c = fgetc(f)) != EOF && isalpha(c))
             {
                 dolzina++;
