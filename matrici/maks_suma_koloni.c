@@ -6,6 +6,7 @@
  *
  * Програмата ја пресметува сумата само на колоната во која се наоѓа максималниот елемент
  * во целата матрица, и не го зема максималниот елемент во сумата.
+ * Максималниот елемент го заменува со добиената сума.
  *
  */
 
@@ -28,7 +29,7 @@ int main()
         }
     }
 
-    printf("\nMatricata e: \n");
+    printf("\nVnesenata matrica e: \n");
     for(i=0;i<n;i++)
     {
         for(j=0;j<m;j++)
@@ -59,7 +60,14 @@ int main()
         }
     }
 
-    printf("Sumata e: %d", suma);
+    a[r][k] = suma;
 
+    printf("\nNovata matrica e: \n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+            printf("  %d",a[i][j]);
+        printf("\n");
+    }
     return 0;
 }
